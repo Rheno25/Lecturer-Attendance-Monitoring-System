@@ -1,0 +1,103 @@
+.lecturerHistoryChild {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0 !important;
+  right: 0;
+  bottom: -8px;
+  left: 0;
+  box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background: linear-gradient(rgba(199, 214, 33, 0.2), rgba(199, 214, 33, 0.2)),
+    linear-gradient(rgba(19, 17, 1, 0.28), rgba(19, 17, 1, 0.28)),
+    rgba(70, 109, 211, 0.1);
+}
+.history,
+.lecturerDetail {
+  position: relative;
+  z-index: 1;
+}
+.history {
+  display: inline-block;
+  min-width: 110px;
+}
+.lecturerHistory {
+  align-self: stretch;
+  height: 512px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px var(--padding-48xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: 165px;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: 68px;
+  max-width: 100%;
+}
+.displayDosen,
+.displayDosenInner,
+.frameParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.displayDosenInner {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 69px 0 68px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.displayDosen {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-1);
+  overflow: hidden;
+  flex-direction: column;
+  gap: 60px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1050px) {
+  .history,
+  .lecturerDetail {
+    font-size: var(--font-size-7xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    gap: 34px;
+  }
+  .displayDosenInner {
+    padding-left: var(--padding-15xl);
+    padding-right: var(--padding-15xl);
+    box-sizing: border-box;
+  }
+  .displayDosen {
+    gap: var(--gap-11xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .history,
+  .lecturerDetail {
+    font-size: var(--font-size-lgi);
+  }
+  .lecturerHistory {
+    gap: 82px;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .frameParent {
+    gap: var(--gap-mid);
+  }
+}

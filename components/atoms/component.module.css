@@ -1,0 +1,36 @@
+.deleteNoteButtonChild {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-crimson);
+  z-index: 0;
+}
+.deleteNote {
+  width: 122px;
+  position: relative;
+  font-size: x-large;
+  font-family: var(--font-archivo-black);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  min-width: 122px;
+  z-index: 1;
+}
+.deleteNoteButton {
+  cursor: pointer;
+  border: 0;
+  padding: 8px;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}

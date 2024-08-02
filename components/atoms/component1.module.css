@@ -1,0 +1,62 @@
+.addNoteButtonChild {
+  height: 100%;
+  width: 270px;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-whitesmoke);
+}
+.addANote {
+  position: relative;
+  display: inline-block;
+  min-width: 116px;
+  z-index: 1;
+}
+.addANoteWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 15px;
+}
+.doneIcon {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.doneButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-limegreen);
+  height: 46px;
+  width: 46px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.addNoteButton {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px;
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-xl);
+  text-align: center;
+  font-size: x-large;
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+@media screen and (max-width: 450px) {
+  .addANote {
+    font-size: var(--font-size-lgi);
+  }
+}

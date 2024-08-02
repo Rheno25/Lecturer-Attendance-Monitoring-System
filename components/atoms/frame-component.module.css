@@ -1,0 +1,190 @@
+.frameChild {
+  height: 270px;
+  width: 272px;
+  position: relative;
+  object-fit: cover;
+}
+.currentStatus,
+.lecturerFullName {
+  margin: 0;
+  position: relative;
+  font-weight: 400;
+  font-family: inherit;
+}
+.lecturerFullName {
+  align-self: stretch;
+  font-size: inherit;
+}
+.currentStatus {
+  width: 231px;
+  font-size: var(--body-p-large-size);
+  display: inline-block;
+}
+.lecturerFullNameParent {
+  width: 472px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  max-width: 100%;
+}
+.component5Child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-whitesmoke);
+}
+.change,
+.sfSymbolChevron {
+  position: relative;
+  z-index: 1;
+}
+.change {
+  display: inline-block;
+  min-width: 82px;
+}
+.sfSymbolChevron {
+  width: 14.4px;
+  height: 8.1px;
+  object-fit: contain;
+}
+.component5,
+.component5Parent,
+.sfSymbolChevronWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sfSymbolChevronWrapper {
+  flex-direction: column;
+  padding: var(--padding-3xs) 0 0;
+}
+.component5,
+.component5Parent {
+  flex-direction: row;
+}
+.component5 {
+  padding: var(--padding-4xs) var(--padding-4xs) var(--padding-4xs)
+    var(--padding-10xl);
+  position: relative;
+  gap: var(--gap-11xl);
+}
+.component5Parent {
+  align-self: stretch;
+  gap: var(--gap-40xl);
+  font-size: var(--body-h4-size);
+}
+.frameParent,
+.frameWrapper,
+.rectangleParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameParent {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-21xl);
+  min-width: 500px;
+}
+.frameWrapper,
+.rectangleParent {
+  flex-direction: row;
+}
+.rectangleParent {
+  flex: 1;
+  gap: var(--gap-11xl);
+}
+.frameWrapper {
+  width: 1187px;
+  padding: 0 var(--padding-48xl);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-37xl);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+.note {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size:x-large;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.changeDropdown {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.available {
+  color: blue;
+  /* Add other styles for Available status */
+}
+
+.unavailable {
+  color: red;
+  /* Add other styles for Unavailable status */
+}
+
+.busy {
+  color: orange;
+  /* Add other styles for Busy status */
+}
+@media screen and (max-width: 1200px) {
+  .frameWrapper {
+    padding-left: var(--padding-14xl);
+    padding-right: var(--padding-14xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .frameChild {
+    flex: 1;
+  }
+  .lecturerFullName {
+    font-size: var(--font-size-26xl);
+  }
+  .currentStatus {
+    font-size: var(--font-size-10xl);
+  }
+  .component5Parent {
+    flex-wrap: wrap;
+  }
+  .frameParent {
+    min-width: 100%;
+  }
+  .rectangleParent {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 750px) {
+  .component5Parent {
+    gap: var(--gap-10xl);
+  }
+  .frameParent {
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .lecturerFullName {
+    font-size: var(--font-size-15xl);
+  }
+  .currentStatus {
+    font-size: var(--font-size-3xl);
+  }
+  .change {
+    font-size: var(--font-size-lgi);
+  }
+}
